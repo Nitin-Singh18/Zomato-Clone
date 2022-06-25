@@ -3,7 +3,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zomato_clone/Authenticate/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -40,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Text(
           "Zomato",
           style: TextStyle(
-              fontSize: 38.sp,
+              fontSize: 38,
               color: Colors.white,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.bold),
