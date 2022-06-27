@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class FoodItems {
   String name, imageUrl;
 
@@ -13,6 +15,13 @@ class Restaurants {
       required this.price,
       required this.rating,
       required this.title});
+}
+
+class OffersData {
+  String title, subtitle;
+  Color color;
+  OffersData(
+      {required this.color, required this.subtitle, required this.title});
 }
 
 List<FoodItems> foodItemList = [
@@ -97,5 +106,22 @@ List<Restaurants> restaurantList = [
     rating: "4.0",
     imageUrl:
         "https://media.self.com/photos/5ebd7a636ed447b59b846244/4:3/w_2560%2Cc_limit/snack-plate.jpg",
+  ),
+];
+final List<OffersData> data = [
+  OffersData(
+    title: "PRO extra 15%...",
+    subtitle: "only for members...",
+    color: Colors.red[700]!,
+  ),
+  OffersData(
+    title: "60% off up to ev...",
+    subtitle: "use code WELCO....",
+    color: Colors.blue[700]!,
+  ),
+  OffersData(
+    title: "60% OFF up to ev...",
+    subtitle: "user code WELCO...",
+    color: Colors.blue[700]!,
   ),
 ];
